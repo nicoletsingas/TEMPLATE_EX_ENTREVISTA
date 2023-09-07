@@ -11,11 +11,22 @@ let listaDePessoasEstudantes =[
 
 const pessoaEstudante = {
     nome : 'Fayra',
-    idade: 29,
+    idade: 20,
     cpf: 91349341037, 
     modulo: modulosDoCurso[1]
 }
 
+const novaPessoaEstudante = {
+    ...pessoaEstudante,
+    nome : 'Flávia',
+    idade: 30,
+    cpf: 89349341037, 
+    modulo: modulosDoCurso[2]
+}
+
+
+listaDePessoasEstudantes.push(pessoaEstudante)
+listaDePessoasEstudantes.push(novaPessoaEstudante)
 
 
 console.log(listaDePessoasEstudantes)
