@@ -28,5 +28,10 @@ const novaPessoaEstudante = {
 listaDePessoasEstudantes.push(pessoaEstudante)
 listaDePessoasEstudantes.push(novaPessoaEstudante)
 
+const menoresDeVinte = listaDePessoasEstudantes.filter((pessoa)=> pessoa.idade <= 20)
+
+const somarIdade = listaDePessoasEstudantes.map((pessoa)=> pessoa.idade +1)
 
 console.log(listaDePessoasEstudantes)
+console.log(menoresDeVinte)
+console.log(somarIdade)
